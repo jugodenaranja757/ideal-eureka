@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selector Basic</title>
+    <style>
+ 	h1:hover { color: red; }
+ 	h1:active { color: blue; }
+    #one {
+ 	   width: 800px; margin: 0 auto;
+ 	   background: rgb(4, 255, 0);
+ 	}
+    .two {color:orange;}
+    .three { background-color: greenyellow; }
+    input[type="text"] { background: orchid; }
+    #four>h3 { color: red; }
+    input:focus { background-color: orange; }
+    ul { overflow: hidden; }
+    li {
+        list-style: none;
+        float: left; padding: 15px;
+    }
+    li:first-child { border-radius: 10px 0 0 10px; }
+    li:last-child { border-radius: 0 10px 10px 0; }
+    li:nth-child(2n) { background-color: #00ccff; }
+    li:nth-child(2n+1) { background-color: #0b4daf; }
+    p:nth-child(1) { font-size: 100%;}
+    p:nth-child(2) { font-size: 150%; }
+    p:nth-child(3) { font-size: 200%; }
+    </style>
+</head>
+<body>
+    <p>C</p>
+    <p>S</p>
+    <p>S</p>
+    <div id="one">
+      <h2>기본선택자</h2>
+   </div>
+   <div id="one">
+      <h3>기본선택자</h3>
+   </div>
+   <ul>
+ 	<h5 class="two">1</h5>
+ 	<h5 class="two three">2</h5>
+ 	<h5>3</h5>
+    </ul>
+    <form>
+ 	<input type="text">
+    </form>
+    <div id="four">
+ 	 <h3>후손선택자</h3>
+     <div id="nav">
+ 	   <h3>자손선택자</h3>
+ 	 </div>
+    </div>
+    <h1>반응선택자</h1>
+    <h4>상태선택자</h4>
+    <input focus="focus">
+    <ul>
+    <li>구</li>
+    <li>조</li>
+    <li>선</li>
+    <li>택</li>
+    <li>자</li>
+    </ul>
+</body>
+</html>
